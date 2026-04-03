@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PackRight — Travel Prep</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ═══ LANDING PAGE (pure HTML) ═══ -->
+
+<nav class="land-nav">
+  <div class="land-logo">Pack<span>Right</span></div>
+  <button class="nav-cta" onclick="document.getElementById('app').scrollIntoView({behavior:'smooth'})">Try it free →</button>
+</nav>
+
+<!-- HERO -->
+<section class="land-hero">
+  <div class="land-stamp">✦ Free · No sign-up · Open source</div>
+  <h1 class="land-h1">Pack smart.<br />Travel <em>lighter.</em><br /><mark>Worry less.</mark></h1>
+  <p class="land-sub">Tell us where you're going. We fetch live weather, build a weather-smart packing list, and lay out your itinerary — in seconds.</p>
+  <div class="land-cta-row">
+    <button class="cta-primary" onclick="document.getElementById('app').scrollIntoView({behavior:'smooth'})">Build my trip plan →</button>
+    <button class="cta-ghost" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">How it works</button>
+  </div>
+  <div class="land-stats">
+    <div class="stat-item"><div class="stat-num">20</div><div class="stat-label">Destinations</div></div>
+    <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Trip types</div></div>
+    <div class="stat-item"><div class="stat-num">Live</div><div class="stat-label">Weather data</div></div>
+    <div class="stat-item"><div class="stat-num">0</div><div class="stat-label">Sign-ups needed</div></div>
+  </div>
+  <div class="scroll-hint">
+    <div>scroll</div>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- DESTINATIONS STRIP -->
+<div class="dest-strip">
+  <div class="dest-track" id="destTrack"></div>
+</div>
+
+<!-- FEATURES -->
+<section class="land-section">
+  <div class="section-eyebrow">What you get</div>
+  <h2 class="section-h2">Everything you need.<br />Nothing you don't.</h2>
+  <p class="section-sub">Three focused tools, built around your actual trip — not a generic checklist from 2015.</p>
+  <div class="features-grid">
+    <div class="feat-card f1">
+      <div class="feat-icon green">🌤️</div>
+      <div class="feat-title">Live weather packing</div>
+      <div class="feat-desc">We pull real forecast data for your destination and automatically add cold gear, rain essentials, or heat protection to your list.</div>
+    </div>
+    <div class="feat-card f2">
+      <div class="feat-icon gold">💱</div>
+      <div class="feat-title">Currency converter</div>
+      <div class="feat-desc">Instantly convert your INR budget to the local currency. Drag the slider to plan spending across different amounts.</div>
+    </div>
+    <div class="feat-card f3">
+      <div class="feat-icon blue">🗓️</div>
+      <div class="feat-title">Day-by-day itinerary</div>
+      <div class="feat-desc">Destination-specific activity suggestions — not generic filler. Relaxed or packed pace, tailored to your trip length.</div>
+    </div>
+  </div>
+</section>
+
+<div class="land-divider"></div>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how">
+  <div class="how-inner">
+    <div class="how-eyebrow">Simple by design</div>
+    <h2 class="how-h2">Three steps. One page.</h2>
+    <div class="steps-row">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-title">Enter your trip</div>
+        <div class="step-desc">Pick your destination, duration, trip type, and budget. No account, no forms, no friction.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-title">We fetch live data</div>
+        <div class="step-desc">Real weather from Open-Meteo API is pulled for your exact destination and trip window.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-title">Pack &amp; go</div>
+        <div class="step-desc">Check off items as you pack, convert currency, review your day plan. You're ready.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="proof-section">
+  <p class="proof-quote">"Finally, a packing tool that knows Bangkok in April is not the same as Bangkok in December."</p>
+  <div class="proof-author">— The entire point of live weather data</div>
+  <div class="proof-badges">
+    <div class="proof-badge">🌐 Open-Meteo API</div>
+    <div class="proof-badge">⚡ Instant generation</div>
+    <div class="proof-badge">🔒 No data stored</div>
+    <div class="proof-badge">📱 Mobile friendly</div>
+    <div class="proof-badge">🆓 Always free</div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2 class="cta-band-h2">Ready to pack smarter?</h2>
+  <p class="cta-band-sub">Takes 30 seconds. No sign-up. Works on any device.</p>
+  <button class="cta-primary" onclick="document.getElementById('app').scrollIntoView({behavior:'smooth'})">Build my trip plan →</button>
+</div>
+
+<!-- ═══ APP SECTION ═══ -->
+<div id="app" class="app-anchor" style="background:var(--bg)">
+  <div id="root"></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="land-footer">
+  <div class="footer-logo">Pack<span>Right</span></div>
+  <div class="footer-sub">Built with React · Weather by Open-Meteo · Made for travellers</div>
+</footer>
+
+<script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
