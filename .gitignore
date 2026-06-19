@@ -1,24 +1,95 @@
-# Logs
-logs
+# Sensitive files
+.env
+.ssh/
+.gitconfig
+
+# Windows system / user profile junk
+NTUSER.DAT
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+*.TM.blf
+*.regtrans-ms
+
+# Large user folders that should never be committed
+AppData/
+Anaconda/
+OneDrive/
+Downloads/
+Contacts/
+Favorites/
+Links/
+Music/
+Videos/
+Searches/
+Saved Games/
+Microsoft/
+Application Data/
+Cookies/
+Local Settings/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/
+Documents/
+
+# Dev tool config folders
+.gemini/
+.antigravity/
+.antigravity-ide/
+.cursor/
+.vscode/
+.vscode-shared/
+.copilot/
+.conda/
+.condarc/
+.continuum/
+.anaconda/
+.config/
+.cache/
+.local/
+.ipython/
+.jupyter/
+.keras/
+.matplotlib/
+.streamlit/
+.flwr/
+.docker/
+.rustup/
+.venv/
+.th-client/
+.dbclient/
+.claude.json
+.pr_agent.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Node
+node_modules/
+
+# Archives and large binaries
+*.zip
+*.tar.gz
+*.rar
+*.whl
+
+# Notebooks output (keep .ipynb but ignore checkpoints)
+.ipynb_checkpoints/
+
+# Misc
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+*.bak
+*.tmp
+Thumbs.db
+Desktop.ini
